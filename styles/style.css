@@ -168,6 +168,157 @@ margin: 0 auto;
   cursor: pointer;
 }
 
+.card-container {
+  width: 100%;
+  overflow: hidden; 
+  position: relative;
+  
+}
+
+.card-box {
+  width: 100%;
+  position: relative;
+  overflow: hidden; 
+}
+
+.cards {
+  display: flex;
+
+}
+
+.cards img {
+  height: 300px;
+  
+  flex: 1;
+  margin: 0 auto;
+  object-fit: cover;
+  
+}
+.fuelbycoffee{
+position: relative;
+
+}
+
+.coffee {
+  position: relative;
+  text-align: center;
+}
+.coffee img{
+  width: 100%;
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+}
+.fuel-text{
+  position: absolute;
+  top:10%;
+  left: 0;
+  color: #f5f5f5;
+  font-size: 2.5em;
+  transform: translateX(60%);
+  text-shadow: 2px 2px #000;
+  color: #d64214;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 30px;
+}
+.coffee p{
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  left: -8%;
+  color: #f5f5f5;
+  font-size: 1em;
+  line-height: 1.5;
+  transform: translateX(50%);
+  text-shadow:2px 2px #000;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 40px;
+}
+.fuel{
+  position: absolute;
+  top:35%;
+  left:20%;
+  text-align: center;
+  transform: translateX(45%);
+  padding: 12px 20px 12px 20px;
+
+  background-color:  #d64214;;
+  border: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  border-radius: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 30px;
+}
+
+.coffee-heart{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.heart img{
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  transition: 8s ease-in-out;
+}
+.heart img:hover{
+  transform: scale(1.3) ;
+}
+.testimonial {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.head{
+  margin: 30px auto;
+  text-align: center;
+}
+.testimonial-container {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr); /* This creates 4 columns for the testimonial cards */
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: #ccc;
+  border-radius: 20px;
+  margin: 20px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  margin: 0 auto;
+}
+
+.testi-text {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.testi-para {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* This makes the paragraph take up 80% of the card's width */
+  text-align: center;
+  color: #333;
+  overflow: hidden;
+}
 
 
 
