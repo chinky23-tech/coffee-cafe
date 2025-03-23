@@ -13,17 +13,17 @@ body{
     height: 400px;
     
 }
-.crroissant-hero h2{
+.crroissant-hero h1{
     padding-top: 80px;
-    font-size: 25px;
+    
 }
 .crroissant-hero p{
     font-size: 20px;
     line-height: 2;
-    margin-top: 50px;
+  
     
 }
 .crroissant-hero img{
     height: 100px;
-    margin-top: 50px;
+   
 }
