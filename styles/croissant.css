@@ -7,23 +7,76 @@ body{
     text-align: center;
 }
 .hero{
-    background-color: #7e4648;
+    background-color: #412728;
     color: #ffffff;
     width: 100%;
     height: 400px;
     
 }
 .crroissant-hero h1{
-    padding-top: 80px;
-    
+    padding: 50px;
+}
+.crroissant-hero img{
+    margin-top: 20px;
+    height: 120px;
 }
 .crroissant-hero p{
     font-size: 20px;
-    line-height: 2;
+}
+/* Styling the main section */
+.croissant-section {
+    padding: 40px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+}
+
+/* Flex container for images */
+.croissant-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    justify-content: center;
+}
+
+/* Card styling 
+.croissant-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    padding: 10px 0px 20px 0px;
+}
+*/
+.croissant-card:hover {
+    transform: scale(1.05);
+}
+
+/* Image container */
+.croissant-img {
+    width: 600px; /* Adjust as needed */
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  
+    margin-bottom: 20px;
+}
+
+/* Making images responsive */
+.croissant-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 25px;
+border-bottom-left-radius: 25px;
   
     
 }
-.crroissant-hero img{
-    height: 100px;
+ h2{
+    text-align: center;
+   font-size: 25px;
    
 }

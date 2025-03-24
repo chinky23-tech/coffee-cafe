@@ -135,3 +135,64 @@ nav{
     display: block;
     
    }
+   @media (max-width: 768px) {
+    .navlinks {
+        display: none; 
+        position: absolute;
+        top: 70px; 
+      flex-direction: column;
+      float: left;
+      background-image: linear-gradient(to bottom, #2a272a, #412728,#7f4d3e);
+     
+       align-items: flex-start;
+       padding: 20px 0;
+       right: 0;
+       width: 100%;
+       
+         }
+        
+  
+  .navlinks.show{
+    display: flex;
+   }
+  
+   .logo img{
+    height: 40px;
+    width: auto;
+    margin-top: 10px;
+   }
+   .logo-name{
+    font-size: 15px;
+    margin-top: 8px;
+   }
+    .hamburger {
+        display: flex; 
+    }
+  
+    .navlinks li {
+        margin: 10px 30px; 
+    
+        
+    }
+    .slides img{
+  height: 400px;
+    }
+  
+  }
+  
+  @media (min-width: 769px) {
+    /* Adjustments for larger screens */
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+  
+    .logo-name {
+      font-size: 20px;
+    }
+   
+  
+    
+  }
+  
+  
