@@ -47,13 +47,14 @@ nav{
   
     
   }
-  .logo-name{
+  .logo-name , a{
     display: flex;
     justify-content: center;
    flex-shrink: 0;
     font-size: 24px;
     font-weight: bold ;
     color: rgb(113, 71, 71);
+    text-decoration: none;
   }
   .hamburger{
     display: none;
