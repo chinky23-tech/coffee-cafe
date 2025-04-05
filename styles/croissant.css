@@ -75,17 +75,44 @@ border-bottom-left-radius: 25px;
   
     
 }
- h2{
+ /* Quote section styling 
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #f8f8f8;
+}*/
+
+/* Container with relative positioning 
+.my-thought {
+ height: 600px;
+ width: 100%;
+ margin: 0 auto;
+}
+*/
+/* Image Styling */
+.my-thought img {
+    width: 100%;
+    height: 600px; /* Adjust as needed */
+   
+    display: block;
+    margin: 0 auto;
+}
+
+/* Overlay text styling */
+.quote-text {
+    position: absolute;
+top: 160%;
+    left: 50%;
+    transform: translateX(-60%);
+    color:#fff;
+   padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
     text-align: center;
-   font-size: 25px;
    
 }
-.quote{
-    margin: 0 auto;
-    padding:  50px;
-}
-.my-thought img{
-height: 600px;
-width: 100%;
-}
+
 
