@@ -21,7 +21,8 @@
 
 /* Coffee card styling */
 .coffee-card{
-    background-color: red;
+    background-color: #331c0bf7;
+    color: white;
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgpa(0,0,0,0.1);
@@ -51,8 +52,17 @@ margin: 0 auto;
    
     
 }
+.coffee-card-img h2{
+    padding: 10px;
+ font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.coffee-card-img p{
+    margin: 10px;
+    font-size: 15px;
+}
 .coffee-card-spl{
-    background-color: red;
+    background-color: #331c0bf7;
+    color: white;
     grid-column: span 2;
     width: 100%;
     border-radius: 10px;
@@ -79,7 +89,12 @@ height: 100%;
        
         aspect-ratio: 1/1;
         
-       
-       
-        
+       }
+       .coffee-card-imgspl h2{
+        padding: 10px;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .coffee-card-imgspl p{
+        margin: 10px;
+        font-size: 16px;
     }
