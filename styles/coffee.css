@@ -103,7 +103,7 @@ height: 100%;
     /* Hero Section */
 .coffee-hero {
     position: relative;
-     background-image: linear-gradient(to bottom, #2a272a, #412728, #7f4d3e, #b87c4c, #e2b659);
+    background-image: linear-gradient(to bottom, #2a272a, #412728, #7f4d3e, #b87c4c, #e2b659);
     height: 300px;
     color: white;
     text-align: center;
@@ -113,41 +113,29 @@ height: 100%;
     flex-direction: column;
     padding: 20px;
 }
+
+.coffee-hero-content h1{
+    font-size: 3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.coffee-hero-content p{
+    font-size: 15px;
+    line-height: 2;
+    
+}
 .button{
     margin-top: 20px;
-    background-color: red;
-    padding: 0 0 0 0;
+   background-color: rgb(37, 11, 11);
+    padding:  10px 15px 10px 15px;
+    border-radius: 20px;
+   
+    
     
 }
-
-/* Content inside the hero section 
-.coffee-hero-content {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.coffee-hero h1 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-}
-
-.coffee-hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.coffee-cta-button {
-    background-color: #ed1b1b;
-    padding:  10px  15px  ;
-    
-    border-radius: 15px;
-    
-}
-
-.cta-button:hover {
-    background-color: #3f2a1e;
+.button .coffee-cta-button{
+color: white;
+font-size: 20px;
 }
 
 
-*/
 
