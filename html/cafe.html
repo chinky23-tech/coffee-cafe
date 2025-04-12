@@ -1,11 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bella Café - Artisan Coffee & Croissants</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>welcome to the cafe</h1>
+  <header class="menu-header">
+    <div class="logo">
+      <img src="assets/coffee-logo.svg" alt="Bella Café Logo">
+      <h1>Bella Café</h1>
+    </div>
+    <p class="tagline">Artisan Coffee & French Pastries</p>
+  </header>
+
+  <main class="menu-container">
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All Items</button>
+      <button class="filter-btn" data-filter="coffee">Coffee</button>
+      <button class="filter-btn" data-filter="croissant">Croissants</button>
+      <button class="filter-btn" data-filter="special">Specials</button>
+    </div>
+
+    <div class="menu-grid">
+      <!-- Coffee Items -->
+      <div class="menu-item coffee" data-category="coffee">
+        <img src="assets/espresso.jpg" alt="Espresso">
+        <div class="item-info">
+          <h3>Espresso</h3>
+          <p>Rich single shot with crema</p>
+          <span class="price">$3.50</span>
+          <button class="add-to-cart">Add to Order</button>
+        </div>
+      </div>
+
+      <div class="menu-item coffee" data-category="coffee">
+        <img src="assets/cappuccino.jpg" alt="Cappuccino">
+        <div class="item-info">
+          <h3>Cappuccino</h3>
+          <p>Espresso with steamed milk foam</p>
+          <span class="price">$4.75</span>
+          <button class="add-to-cart">Add to Order</button>
+        </div>
+      </div>
+
+      <!-- Croissant Items -->
+      <div class="menu-item croissant" data-category="croissant">
+        <img src="assets/classic-croissant.jpg" alt="Classic Croissant">
+        <div class="item-info">
+          <h3>Classic Croissant</h3>
+          <p>Buttery French-style pastry</p>
+          <span class="price">$3.25</span>
+          <button class="add-to-cart">Add to Order</button>
+        </div>
+      </div>
+
+      <div class="menu-item croissant special" data-category="croissant special">
+        <img src="assets/almond-croissant.jpg" alt="Almond Croissant">
+        <div class="item-info">
+          <h3>Almond Croissant</h3>
+          <p>Filled with frangipane, topped with almonds</p>
+          <span class="price">$4.50</span>
+          <button class="add-to-cart">Add to Order</button>
+        </div>
+      </div>
+
+      <!-- More items... -->
+    </div>
+
+    <div class="order-summary">
+      <h2><i class="fas fa-shopping-bag"></i> Your Order</h2>
+      <ul class="cart-items">
+        <!-- JS will populate this -->
+      </ul>
+      <div class="total-section">
+        <span>Total:</span>
+        <span class="total-price">$0.00</span>
+      </div>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

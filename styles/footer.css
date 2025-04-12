@@ -43,7 +43,7 @@
   
   .footer-social {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     gap: 1rem;
  
@@ -63,13 +63,15 @@
     border-radius: 50%;
   }
   .fa-facebook{
-    padding: 10px 15px 0px 0px;
+   padding: 8px 13px 8px 13px;
     background-color: #3B5998;
     color: white;
   
     
   }
   .fa-instagram{
+    margin-top: 20px;
+    padding: 8px 10px 8px 10px;
     background: #bb0000;
     color: white;
   
@@ -77,6 +79,7 @@
     
   }
   .fa-twitter{
+    padding: 8px 10px 8px 10px;
     background-color: #55ACEE;
     color:white;
   }
