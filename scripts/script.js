@@ -11,4 +11,6 @@ hamburger.addEventListener('click', () => {
 function openNewPage(){
     window.open("cafe.html");
 }
-
+function openNewPage(){
+    window.open("coffee.html");
+}

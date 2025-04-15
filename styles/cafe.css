@@ -32,10 +32,7 @@
     height: 50px;
   }
   
-  .tagline {
-    font-style: italic;
-    margin-top: 0.5rem;
-  }
+  
   
   .filter-buttons {
     display: flex;
@@ -59,7 +56,16 @@
     background: var(--primary);
     color: white;
   }
+  .tagline {
+text-align: center;
+font-size: 24px;
+color:var(--primary) ;
+
+  font-style: italic;
+  margin-top: 0.5rem;
+}
   
+
   .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
