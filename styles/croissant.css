@@ -91,7 +91,7 @@ border-bottom-left-radius: 25px;
 /* Overlay text styling */
 .quote-text {
     position: absolute;
-top: 160%;
+    top: 160%;
     left: 50%;
     transform: translateX(-60%);
     color: var(--dark);
@@ -100,6 +100,7 @@ top: 160%;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
+    
    
 }
 
