@@ -165,13 +165,14 @@ font-size: 20px;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
   padding: 20px;
 
 }
 
 .coffee-item {
+  
   background: white;
   border-radius: 12px;
   overflow: hidden;
@@ -186,12 +187,13 @@ font-size: 20px;
 
 .coffee-details {
   padding: 0px;
+  
 }
 
 .coffee-item img {
   margin: 0 auto;
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
   border-bottom: 3px solid var(--accent-gold);
 }
@@ -206,7 +208,7 @@ font-size: 20px;
   color: #666;
   margin: 10px 15px;
   font-size: 0.95rem;
-  min-height: 40px;
+ /* min-height: 40px;*/
 }
 
 .price {
@@ -216,13 +218,15 @@ font-size: 20px;
   font-size: 1.3rem;
    margin: 15px;
   }
-  .cart {
+  .add-to-cart{
     width: 100%;
     padding: 12px;
     background: var(--accent-gold);
     color: white;
     border: none;
     border-radius: 6px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s;
