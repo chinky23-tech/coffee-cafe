@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/nav.css">
     <link rel="stylesheet" href="../styles/coffee.css">
+   
     <link rel="stylesheet" href="../styles/testi.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -129,57 +130,70 @@
                 <img src="../images/espresso.webp">
                 <h2>Espresso</h2>
                 <p class="ingredients">Single shot, rich crema</p>
-                <p class="price">&#8360: 240</p>
+                <p class="price">&#8377; 240</p>
                 <button class="add-to-cart" data-name="Espresso" data-price="240">Add to Cart</button>
               </div>
             </div>
-        
+          
             <!-- Coffee 2 -->
             <div class="coffee-item">
               <div class="coffee-details">
                 <img src="../images/capuccinno.webp">
                 <h2>Cappuccino</h2>
                 <p class="ingredients">Espresso, steamed milk, foam</p>
-                <p class="price">&#8360: 265</p>
-                <button class="add-to-cart" data-name="cappuccino" data-price="265">Add to Cart</button>
+                <p class="price">&#8377; 265</p>
+                <button class="add-to-cart" data-name="Cappuccino" data-price="265">Add to Cart</button>
               </div>
             </div>
-        
+          
             <!-- Coffee 3 -->
             <div class="coffee-item">
               <div class="coffee-details">
                 <img src="../images/latte.avif">
                 <h2>Latte</h2>
                 <p class="ingredients">Espresso with velvety milk</p>
-                <p class="price">&#8360: 250</p>
-                <button class="add-to-cart" data-name="latte" data-price="250">Add to Cart</button>
+                <p class="price">&#8377; 250</p>
+                <button class="add-to-cart" data-name="Latte" data-price="250">Add to Cart</button>
               </div>
             </div>
-        
+          
             <!-- Coffee 4 -->
             <div class="coffee-item">
               <div class="coffee-details">
                 <img src="../images/cold brew.avif">
                 <h2>Cold Brew</h2>
                 <p class="ingredients">Espresso with hot water</p>
-                <p class="price">&#8360: 245</p>
-                <button class="add-to-cart" data-name="cold brew" data-price="245">Add to Cart</button>
+                <p class="price">&#8377; 245</p>
+                <button class="add-to-cart" data-name="Cold Brew" data-price="245">Add to Cart</button>
               </div>
             </div>
-        
+          
             <!-- Coffee 5 -->
             <div class="coffee-item">
               <div class="coffee-details">
                 <img src="../images/mocha.jpeg">
                 <h2>Mocha</h2>
                 <p class="ingredients">Espresso, chocolate, milk</p>
-                <p class="price">&#8360: 305</p>
-                <button class="add-to-cart" data-name="mocha" data-price="305">Add to Cart</button>
+                <p class="price">&#8377; 305</p>
+                <button class="add-to-cart" data-name="Mocha" data-price="305">Add to Cart</button>
               </div>
-              <div class="cart-counter" id="cartCounter">0</div>
             </div>
-           
+          
+            <!-- 🛒 Order Summary Section -->
+            <div class="order-summary-container"> <!-- typo fixed: conatiner ➜ container -->
+              <h2><i class="fas fa-shopping-bag"></i> Your Order</h2>
+              <ul class="cart-items-list">
+                <!-- JS will populate this -->
+              </ul>
+              <div class="total-section-container"> <!-- typo fixed: conatiner ➜ container -->
+                <span>Total:</span>
+                <span class="total-price-list">&#8377; 0.00</span>
+              </div>
+              <button class="checkout-btn-btn">Checkout</button>
+              <button class="clear-btn-btn">Clear Cart</button>
+            </div>
           </main>
+          
         
             <!--testimonial section-->
         <section class="testimonial" aria-label="Customer testimonials">
@@ -274,6 +288,8 @@
           <p>© 2025 Coffee House. All rights reserved.</p>
         </div>
       </footer>
+      <script src="../scripts/script.js"></script>
+      <script src="../scripts/cs.js"></script>
       <script src="../scripts/cart.js"></script>
         <script src="../scripts/testi.js"></script>
         

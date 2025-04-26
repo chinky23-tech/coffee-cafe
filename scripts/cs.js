@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+  /*document.addEventListener('DOMContentLoaded', () => {
     // DOM Elements
     const cartButton = document.getElementById('cartButton');
     const cartModal = document.getElementById('cartModal');
@@ -142,4 +142,48 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initialize UI
     updateUI();
+  });*/
+ // functional cart 
+  const cartItems = [];
+  const cartList = document.querySelector('.cart-items-list');
+  const totalPriceEl = document.querySelector('.total-price-list');
+
+  function updateCart() {
+    cartList.innerHTML = '';
+    let total = 0;
+
+    cartItems.forEach((item, index) => {
+      const li = document.createElement('li');
+      li.innerHTML = `${item.name} <span>&#8377;${item.price}</span>`;
+      cartList.appendChild(li);
+      total += item.price;
+    });
+
+    totalPriceEl.textContent = `₹${total.toFixed(2)}`;
+  }
+
+  document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', () => {
+      const name = button.getAttribute('data-name');
+      const price = parseFloat(button.getAttribute('data-price'));
+
+      cartItems.push({ name, price });
+      updateCart();
+    });
   });
+
+  document.querySelector('.clear-btn-btn').addEventListener('click', () => {
+    cartItems.length = 0;
+    updateCart();
+  });
+
+  document.querySelector('.checkout-btn-btn').addEventListener('click', () => {
+    if (cartItems.length === 0) {
+      alert('Your cart is empty!');
+    } else {
+      alert('Thanks for your order!');
+      cartItems.length = 0;
+      updateCart();
+    }
+  });
+

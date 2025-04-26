@@ -169,6 +169,23 @@ color:var(--primary) ;
     font-size: 1.1rem;
     cursor: pointer;
   }
+  .clear-btn {
+    
+    
+    width: 100%;
+    padding: 1rem;
+    background: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin:  20px 0 ;
+  
+  }
+  .clear-btn:hover {
+    background: var(--primary);
+  }
   
   /* Responsive */
   @media (max-width: 768px) {

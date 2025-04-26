@@ -14,3 +14,13 @@ function openNewPage(){
 function openNewPage(){
     window.open("coffee.html");
 }
+
+
+// order summary
+
+  fetch('order-summary.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('order-summary-container').innerHTML = data;
+    });
+
