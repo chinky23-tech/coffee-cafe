@@ -256,29 +256,34 @@ font-size: 20px;
 
 
 .menu-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 30px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  
 }
 
 .coffee-item {
   border: 1px solid #ddd;
   border-radius: 8px;
-  width: 220px;
-  padding: 15px;
+ 
+  width: 320px;
   text-align: center;
   background-color: #fdfdfd;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .coffee-item img {
+  height: 200px;
+  margin: 0 auto;
   width: 100%;
+  padding: 0;
   border-radius: 5px;
 }
 
 .order-summary-container {
+ 
+
   border: 1px solid #ddd;
   padding: 20px;
   margin: 30px auto;
