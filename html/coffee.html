@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/nav.css">
     <link rel="stylesheet" href="../styles/coffee.css">
-   
+  
     <link rel="stylesheet" href="../styles/testi.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,7 +18,7 @@
         <nav>
             <div class="logo">
                <a href="index.html"><img src="../images/png-coffee.png" alt="coffe house logo"></a>
-           <a href="index.html"> <span class="logo-name">Coffee House</span></a>
+                   <a href="index.html"><span class="logo-name">Coffee House</span></a>
             </div>
             <ul class="navlinks">
                 <li  class="dropdown">
@@ -72,129 +72,54 @@
 
         </section>
         
-       <!--<section class="coffee-types">
-            <div class="coffee-container">
-                <div class="coffee-card">
-                    <div class="coffee-card-img">
-                     
-                     <img src="../images/espresso.jpg.webp" alt="espreeso">  
-                     <h2>Espresso</h2>
-                     <p>A strong, black coffee made by forcing hot water through finely-ground coffee beans, resulting in a rich and intense flavor with a layer of cream on top.</p>
+      <main class="coffee-menu">
+    <div class="coffee-card" data-name="Espresso" data-price="240">
+      <img src="images/espresso.webp" alt="Espresso">
+      <h2>Espresso</h2>
+      <p>Rich and bold, single shot with crema</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+      <p class="price">₹240</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
 
-                    </div>
-                </div>
-                <div class="coffee-card">
-                    <div class="coffee-card-img">
-                       
-                     <img src="../images/latte.avif" alt="latte">  
-                     <h2>Latte</h2>
-                     <p>A smooth and creamy coffee made with a shot of espresso and steamed milk, topped with a small amount of foam. It's a  perfect for those who enjoy a softer coffee flavor.</p>
+    <div class="coffee-card" data-name="Cappuccino" data-price="265">
+      <img src="images/capuccinno.webp" alt="Cappuccino">
+      <h2>Cappuccino</h2>
+      <p>Espresso with steamed milk and foam</p>
+      <div class="quantity-controls">
+        <button class="decrease">-</button>
+        <span class="quantity">0</span>
+        <button class="increase">+</button>
+      </div>
+      <p class="price">₹265</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
 
-                    </div>
-                </div>
-                <div class="coffee-card">
-                    <div class="coffee-card-img">
-                        
-                     <img src="../images/capuccinno.webp" alt="cappuccino">  
-                     <h2>Capuccinno</h2>
-                     <p>A classic Italian coffee made with equal parts espresso, steamed milk, and milk foam. It has a rich, bold flavor with a creamy texture and a frothy, velvety top.</p>
+    <!-- Add more cards as needed -->
+     
+  </main>
 
-                    </div>
-                </div>
-                <div class="coffee-card">
-                    <div class="coffee-card-img">
-                      
-                     <img src="../images/cold brew.avif" alt="cold brew">  
-                     <h2>Cold brew</h2>
-                     <p>A smooth and refreshing coffee brewed slowly with cold water over an extended period. mellow flavor and is often served over ice for a chilled, energizing experience.</p>
+  <section class="cart-container">
+  <h2><i class="fas fa-shopping-bag"></i> Your Order</h2>
+ 
+  <ul class="cart-items"></ul>
+  <div class="cart-total">
+    <span>Total:</span>
+    <span class="total-price">₹0.00</span>
+  </div>
+  <button class="checkout-btn">Checkout</button>
+  <button class="clear-cart-btn">Clear Cart</button>
+</section>
 
-                    </div>
-                </div>
-                <div class="coffee-card-spl">
-                    <div class="coffee-card-imgspl">
-                       
-                     <img src="../images/macha.avif">  
-                     <h2>Mocha</h2>  
-                     <p>A delicious blend of espresso, steamed milk, and rich chocolate syrup, topped with whipped cream. It combines the boldness of coffee with the sweetness of chocolate, creating a perfect balance of flavors.</p>
 
-                    </div>
-                </div>
-                
-                
-            </div>
-        </section>-->
-        <main class="menu-container">
-            <!-- Coffee 1 -->
-            <div class="coffee-item">
-              <div class="coffee-details" data-category="coffee">
-                <img src="../images/espresso.webp" alt="espreeso">
-                <div class="item-info">
-                <h3>Espresso</h3>
-                <p class="ingredients">Single shot, rich crema</p>
-                <p class="price">&#8377; 240</p>
-                <button class="add-to-cart" data-name="Espresso" data-price="240">Add to Cart</button>
-              </div>
-            </div>
-          
-            <!-- Coffee 2 -->
-            <div class="coffee-item">
-              <div class="coffee-details">
-                <img src="../images/capuccinno.webp">
-                <h2>Cappuccino</h2>
-                <p class="ingredients">Espresso, steamed milk, foam</p>
-                <p class="price">&#8377; 265</p>
-                <button class="add-to-cart" data-name="Cappuccino" data-price="265">Add to Cart</button>
-              </div>
-            </div>
-          
-            <!-- Coffee 3 -->
-            <div class="coffee-item">
-              <div class="coffee-details">
-                <img src="../images/latte.avif">
-                <h2>Latte</h2>
-                <p class="ingredients">Espresso with velvety milk</p>
-                <p class="price">&#8377; 250</p>
-                <button class="add-to-cart" data-name="Latte" data-price="250">Add to Cart</button>
-              </div>
-            </div>
-          
-            <!-- Coffee 4 -->
-            <div class="coffee-item">
-              <div class="coffee-details">
-                <img src="../images/cold brew.avif">
-                <h2>Cold Brew</h2>
-                <p class="ingredients">Espresso with hot water</p>
-                <p class="price">&#8377; 245</p>
-                <button class="add-to-cart" data-name="Cold Brew" data-price="245">Add to Cart</button>
-              </div>
-            </div>
-          
-            <!-- Coffee 5 -->
-            <div class="coffee-item">
-              <div class="coffee-details">
-                <img src="../images/mocha.jpeg">
-                <h2>Mocha</h2>
-                <p class="ingredients">Espresso, chocolate, milk</p>
-                <p class="price">&#8377; 305</p>
-                <button class="add-to-cart" data-name="Mocha" data-price="305">Add to Cart</button>
-              </div>
-            </div>
-          
-            <!-- 🛒 Order Summary Section -->
-            <div class="order-summary-container"> <!-- typo fixed: conatiner ➜ container -->
-              <h2><i class="fas fa-shopping-bag"></i> Your Order</h2>
-              <ul class="cart-items-list">
-                <!-- JS will populate this -->
-              </ul>
-              <div class="total-section-container"> <!-- typo fixed: conatiner ➜ container -->
-                <span>Total:</span>
-                <span class="total-price-list">&#8377; 0.00</span>
-              </div>
-              <button class="checkout-btn-btn">Checkout</button>
-              <button class="clear-btn-btn">Clear Cart</button>
-            </div>
-          </main>
-          
+
+
+ 
+
         
             <!--testimonial section-->
         <section class="testimonial" aria-label="Customer testimonials">

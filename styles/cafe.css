@@ -71,6 +71,8 @@ color:var(--primary) ;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
     padding: 2rem;
+    
+    
   }
   
   .menu-item {
@@ -79,8 +81,7 @@ color:var(--primary) ;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s;
-   
-  }
+   }
 
   .menu-item:hover {
     transform: translateY(-5px);
@@ -114,7 +115,7 @@ color:var(--primary) ;
     margin: 1rem 0;
     color: var(--dark);
   }
-  
+  /*
   .add-to-cart {
     width: 100%;
     padding: 0.75rem;
@@ -170,8 +171,6 @@ color:var(--primary) ;
     cursor: pointer;
   }
   .clear-btn {
-    
-    
     width: 100%;
     padding: 1rem;
     background: var(--secondary);
@@ -187,9 +186,74 @@ color:var(--primary) ;
     background: var(--primary);
   }
   
-  /* Responsive */
-  @media (max-width: 768px) {
-    .menu-grid {
-      grid-template-columns: 1fr;
-    }
+ */
+ .add-to-cart {
+  width: 100%;
+  background-color: #6f4e37;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 📦 Cart Styling (BOTTOM full width) */
+.cart-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
   }
+
+.cart-container h2 {
+ 
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.cart-items li {
+  margin-bottom: 10px;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 1.1em;
+}
+
+.checkout-btn,
+.clear-cart-btn {
+  display: block;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #6f4e37;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover,
+.clear-cart-btn:hover {
+  background-color: #5b3f2d;
+}
