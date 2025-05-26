@@ -58,19 +58,16 @@ nav{
     
   }
  .logo-name{
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--dark);
+    
    margin-top: 18px;
-    display: flex;
-    align-items: center;
+    
   }
   .logo-name , a{
     display: flex;
     justify-content: center;
-
-   flex-shrink: 0;
-   font-size: 15px;
+line-height: 0;
+    flex-shrink: 0;
+  
     font-weight: bold ;
    color: var(--dark);
     text-decoration: none;

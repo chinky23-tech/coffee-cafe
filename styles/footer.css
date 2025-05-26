@@ -135,7 +135,7 @@ margin-left: 3rem;
   font-weight: bold;
   color: var(--dark);
   text-decoration: none;
-  margin-left: 1.1rem;
+  margin-left: 1.5rem;
 }
 
 .footer-logo a {
@@ -147,14 +147,14 @@ margin-left: 3rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin:0.2rem  2rem 0 0;
+ 
 }
 
 .footer-links a {
   color: var(--dark);
   text-decoration: none;
   font-size: 0.95rem;
-  
+   margin: 12px;
   transition: color 0.3s ease;
 }
 
@@ -172,6 +172,7 @@ margin-left: 3rem;
   color: var(--dark);
   font-size: 1.2rem;
   transition: color 0.3s ease;
+  margin-left: 1.2rem;
 }
 
 .footer-social a:hover {
