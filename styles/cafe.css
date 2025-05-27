@@ -59,7 +59,7 @@ color:var(--primary) ;
   }
   
   .menu-item {
-    background: white;
+    background: var(--white);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px var(--dark);
@@ -127,7 +127,7 @@ color:var(--primary) ;
 
 
 .cart-container {
-  width: 95%;
+  width: 96%;
 
   margin: 0 auto;
   background-color: var(--white);
@@ -182,8 +182,8 @@ color:var(--primary) ;
   cursor: pointer;
 }
 
-.checkout-btn:hover,
-.clear-cart-btn:hover {
+
+.clear-cart-btn {
   background-color: var(--secondary);
 }
 
