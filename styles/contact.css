@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --primary: #6F4E37;
+    --secondary: #D4A76A;
+    --light: #F5F5DC;
+    --dark: #3E2723;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #333;
+  }
+  body{
+    background-color: var(--light);
+  }
+    .contact-container {
+      max-width: 1200px;
+      margin: 50px auto;
+      background: var(--offwhite);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px var(--gray);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: var(--gray);
+    }
+
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--gray);
+      border-radius: 6px;
+      resize: vertical;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+  input[type="text"],
+    input[type="email"],
+    textarea:focus{
+        outline:  none !important;
+    }
+   
+
+    button{
+        border: 1px solid var(--gray);
+        width: 100%;
+        padding: 12px 20px;
+        margin-top: 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        background: var(--light);
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .contact-container {
+        padding: 20px;
+        margin: 20px 25px 20px 25px;
+      }
+      button {
+        font-size: 14px;
+      }
+    }

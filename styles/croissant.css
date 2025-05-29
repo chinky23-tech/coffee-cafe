@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Playfair Display', serif;
+   
     background-color: var(--light);
     color: var(--dark);
     text-align: center;
