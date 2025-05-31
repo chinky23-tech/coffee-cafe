@@ -8,14 +8,5 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-//  new page open
-function openNewPage(){
-    window.open("cafe.html");
-}
 
-// cafe html page open
-
-function openNewPage(){
-    window.open("coffee.html");
-}
 

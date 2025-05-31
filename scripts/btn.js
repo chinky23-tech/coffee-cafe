@@ -15,5 +15,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // You can add more buttons for other pages here
+  
 });
