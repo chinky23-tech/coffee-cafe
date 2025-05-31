@@ -106,7 +106,12 @@ margin-left: 3rem;
     align-items: center;
     text-align: center;
   }
-
+.footer-logo img{
+  margin-right: 2rem;
+}
+.logo-name {
+    margin-right: 10px;
+  }
   .footer-logo,
   .footer-links,
   .footer-social {

@@ -183,3 +183,31 @@ justify-content: center;
 }
 
 
+@media (max-width: 768px) {
+ .crroissant-hero h1{
+    padding: 30px;
+    font-size: 2em;
+}
+.crroissant-hero img{
+    margin-top: 15px;
+    height: 120px;
+}
+.crroissant-hero p{
+    font-size: 1rem;
+}
+.crroissant-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu-item{
+    width: 100%;
+  }
+  
+ .checkout-btn,
+  .clear-cart-btn:hover {
+   cursor: pointer;
+  }
+  
+ 
+}

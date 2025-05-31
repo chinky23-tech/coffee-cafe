@@ -39,7 +39,7 @@ nav {
     
   }
  .logo-name{
-    
+   
    margin-top: 18px;
     
   }
@@ -72,27 +72,12 @@ nav {
   margin-top: 10px;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--offwhite);
-  min-width: 150px;
-  z-index: 1;
-}
 
-.dropdown-content a {
-  padding: 10px;
-  color: var(--dark);
-  text-decoration: none;
-}
 
-.dropdown-content a:hover {
-  background-color: var(--secondary);
-}
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+
+
+
 
 
 .hamburger {
@@ -102,41 +87,19 @@ nav {
 }
 
 .hamburger span {
-  height: 3px;
-  width: 25px;
-  background: white;
+  height: 2px;
+  width: 30px;
+  background: var(--black);
   margin: 4px;
+ 
+
 }
 
-
-@media screen and (max-width: 768px) {
-  .navlinks {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #333;
-  }
-
-  .navlinks.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .navlinks li {
-    text-align: center;
-  }
-
-  .dropdown-content {
-    position: static;
-  }
-}
 
     .hero-section{
     height: 600px;
-    background-image: linear-gradient(to bottom, #2a272a, #412728, #7f4d3e, #b87c4c, #e2b659);
+   
+    background-image: linear-gradient(to bottom, var(--dark), var(--primary), var(--secondary), var(--light), var(--white));
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -154,13 +117,66 @@ nav {
      padding: 10px 15px;
      border-radius: 20px;
      border: none;
-   background-color:#412728;
-   color: #f5f5f5;
+   background-color:var(--dark);
+   color: var(--offwhite);
    font-size: 15px;
    transition: background-color 0.3s ease;
    }
    .btn:hover{
-     background-color: #e2b659;
+     background-color: var(--secondary);
      cursor: pointer;
-     color: #000;
+     color: var(--black);
    }
+
+
+   @media screen and (max-width: 768px) {
+nav{
+  position: relative;
+}
+.logo{
+  
+  margin-right: 20px;
+}
+.logo-name{
+  margin-top: 12px;
+}
+  .navlinks {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--offwhite);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 20px;
+    border-top: 1px solid var(--offwhite);
+    box-shadow: 0 2px 8px var(--black);
+    z-index: 99;
+  }
+
+  .navlinks.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+.navlinks  li {
+    text-align: left;
+    margin-top: 10px;
+  }
+  .hero-section {
+    height: 400px;
+    padding: 20px;
+  }
+  .hero-section h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+ 
+}
