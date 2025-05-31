@@ -6,9 +6,9 @@ const totalSlides = slides.length;
 // Show slide based on the given index
 function showSlide(index) {
     if (index >= totalSlides) {
-        currentIndex = 0;  // Loop back to the first slide
+        currentIndex = 0;  
     } else if (index < 0) {
-        currentIndex = totalSlides - 1;  // Loop back to the last slide
+        currentIndex = totalSlides - 1;  
     } else {
         currentIndex = index;
     }
@@ -50,8 +50,8 @@ function updateDots() {
 // Automatically change slides every 3 seconds
 function autoSlide() {
     setInterval(() => {
-        showSlide(currentIndex + 1);  // Go to the next slide
-    }, 3000);  // 3000 milliseconds = 3 seconds
+        showSlide(currentIndex + 1);  
+    }, 3000);  
 }
 
 // Initialize the slideshow and start the auto-slide

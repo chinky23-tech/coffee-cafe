@@ -6,7 +6,7 @@
     <title>Coffee Cafe</title>
     
     <link rel="stylesheet" href="../styles/nav.css">
-    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/about.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,17 +25,12 @@
     </div>
 
     <ul class="navlinks">
-      
-        <li><a href="coffee.html">Coffee</a></li>
-       
-        <li><a href="cafe.html">Cafe Menu</a></li>
-        
-        <li><a href="croissant.html">Croissant</a></li>
      
-
-          <li><a href="contact.html">Contact</a></li>
-          
-           <li><a href="about.html">About Us</a></li>
+        <li><a href="coffee.html">Coffee</a></li>
+        <li><a href="cafe.html">Cafe Menu</a></li>
+        <li><a href="croissant.html">Croissant</a></li>
+       <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About Us</a></li>
     </ul>
 
     <div class="hamburger" id="hamburger">
@@ -45,25 +40,26 @@
     </div>
   </nav>
 </header>
-  <div class="contact-container">
-        <h2>Contact Us</h2>
-        <form id = "contactForm">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required/>
+<main class="about-section">
+    <h1>About Coffee House</h1>
+    <p>
+      Welcome to Coffee House, your cozy corner for freshly brewed coffee and warm, buttery croissants.
+    </p>
+    <p>
+      Established as a passion project by coffee lovers, Coffee House aims to bring quality coffee and pastries
+      to the heart of our community. Whether you're stopping by for your morning espresso or staying a while with a
+      latte and a good book, we strive to create a warm and welcoming atmosphere.
+    </p>
+    <p>
+      Our menu features carefully sourced beans, locally baked goods, and a touch of love in every cup. We believe in sustainability,
+      community support, and creating a space where everyone feels at home.
+    </p>
+    <p>
+      Thank you for being part of our journey.
+    </p>
+    <p><strong>Come for the coffee. Stay for the company.</strong></p>
+  </main>
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required/>
-
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject"/>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <div id="errorMessage" class="error"></div>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
     <footer>
     <footer class="footer-minimal">
         <div class="footer-content">
@@ -88,8 +84,6 @@
           <p>© 2025 Coffee House. All rights reserved.</p>
         </div>
       </footer>
-    <script src="../scripts/script.js"></script>
-    <script src="../scripts/slide.js"></script>
-    <script src="../scripts/testi.js"></script>
+   <script src="../scripts/hamburger.js"></script>
 </body>
 </html>
